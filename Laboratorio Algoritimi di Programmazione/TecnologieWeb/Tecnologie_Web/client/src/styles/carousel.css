@@ -1,0 +1,87 @@
+.carousel, .custom-carousel {
+    position: relative;
+    width: 90%; /* Ridotto dal 100% all'80% */
+    max-width: 2000px; /* Aggiunta una larghezza massima */
+    overflow: hidden;
+    margin: 0 auto 30px auto; /* Centrato orizzontalmente con margini automatici */
+    box-shadow: 0 2px 10px var(--shadow-color);
+    border-radius: 8px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; /* Limita l'altezza massima delle immagini */
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.carousel-button {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.carousel-dot.active {
+    background-color: white;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    .carousel, .custom-carousel {
+        width: 95%;
+        margin: 0 auto 20px auto;
+    }
+    
+    .carousel-slide img {
+        max-height: 350px;
+    }
+}
