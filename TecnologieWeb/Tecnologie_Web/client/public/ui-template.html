@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Salon UI</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/swiper.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div id="social-icons">
+        <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <img src="img/facebook_logo.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <img src="img/instagram_logo.svg" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <img src="img/youtube_logo.svg" alt="YouTube">
+        </a>
+    </div>
+    <h1 class="header-title">
+        <a href="ui-template.html">GIO &amp; FABIO'S HAIR SALON</a>
+    </h1>
+    <nav class="user-nav">
+        <div class="user-nav-item">User</div>
+        <div class="user-nav-item">Esci</div>
+    </nav>
+    <nav class="nav-bar">
+        <a href="#chi-siamo" class="nav-item">Chi siamo</a>
+        <a href="services-page.html" class="nav-item">Servizi</a>
+        <a href="#contatti" class="nav-item">Contatti</a>
+    </nav>
+</header>
+
+<!-- CONTENITORE PRINCIPALE CHE SI ESPANDE -->
+<main>
+
+    <section class="central-area">
+        <!-- Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/carosello_1.webp" alt="Carosello 1" loading="lazy" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/carosello_2.webp" alt="Carosello 2" loading="lazy" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/carosello_3.webp" alt="Carosello 3" loading="lazy" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="content-area">
+        <!-- Sezione Chi Siamo -->
+        <div class="section" id="chi-siamo">
+            <h2>Chi Siamo</h2>
+            <p>
+                Benvenuti da <strong>Bellezza Naturale</strong>, il salone di bellezza dove l'arte dei capelli incontra la passione per il benessere.
+                Da oltre 10 anni, il nostro team di professionisti altamente qualificati si dedica a creare look unici e su misura per ogni cliente.
+                Crediamo che ogni persona sia unica, ed è per questo che ci impegniamo a offrire un'esperienza personalizzata, utilizzando solo
+                prodotti di alta qualità e rispettosi dell'ambiente.
+            </p>
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="section" id="contatti">
+            <h2>Contatti</h2>
+            <ul>
+                <li><strong>Indirizzo</strong>: Via della Bellezza, 123 - 20121 Milano (Italia)</li>
+                <li><strong>Telefono</strong>: +39 06 1234 5678</li>
+                <li><strong>Email</strong>: info@bellezzanaturale.it</li>
+            </ul>
+        </div>
+    </section>
+
+<div class="container">
+    <section class="gallery">
+        <div class="gallery-item"><img src="img/gallery/gallery_1.png" alt="Gallery Image 1" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_2.png" alt="Gallery Image 2" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_3.png" alt="Gallery Image 3" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_4.png" alt="Gallery Image 4" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_5.png" alt="Gallery Image 5" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_6.png" alt="Gallery Image 6" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_7.png" alt="Gallery Image 7" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery/gallery_8.png" alt="Gallery Image 8" loading="lazy"></div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p class="project-info">
+            <span class="highlight">Elegance Hair Salon</span> è un salone di bellezza situato a Milano, Italia.<br>
+            Dedicato alla cura dei capelli con prodotti di alta qualità e servizi personalizzati.
+        </p>
+
+        <div class="copyright">
+            <img alt="Creative Commons License" class="cclicense" src="img/hair-salon_cc.png">
+            <p class="copyright-text">&copy; 2024-2025 Grillo Giovanni, Carturan Fabio.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Custom scripts -->
+<script src="scripts/swiper-init.js"></script>
+
+</body>
+</html>
